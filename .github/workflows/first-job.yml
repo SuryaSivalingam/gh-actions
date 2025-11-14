@@ -1,0 +1,12 @@
+name: gh-actions-first-demo-job
+on: workflow_dispatch
+jobs:
+  demo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello world!"
+      - name: printing runner name
+        run: echo "This job is running on $RUNNER_NAME"
+      - name: Goodbye
+        run: echo "Goodbye! The job completed successfully."
